@@ -5,7 +5,5 @@ services:
       - "8081:8501"  # Maps port 8501 (Streamlit default) to port 8081 on the local machine
     volumes:
       - .:/app       # Mounts the current directory into /app in the container
-    depends_on:
-      - translator
     env_file:
       - .env  
